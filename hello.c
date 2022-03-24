@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-sayHello()
+int sayHello()
 {
 	printf("hello, world\n");
+	return 0;
 }

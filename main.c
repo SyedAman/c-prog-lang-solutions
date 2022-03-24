@@ -1,6 +1,7 @@
 #include "hello.h"
 
-main()
+int main()
 {
 	sayHello();
+	return 0;
 }
