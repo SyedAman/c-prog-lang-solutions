@@ -9,13 +9,13 @@ float fromFahr(float fahrenheit)
 
 void printFahrenheitRange(int lower, int upper, int skip)
 {
-	float fahrenheit, celsius;
+	float fahrenheit;
 	
 	printf("Fahrenheit\tCelsius\n");
 	for (float fahrenheit = lower; fahrenheit <= upper; fahrenheit += skip)
 	{
-		celsius = fromFahr(fahrenheit);
-		printf("%10.0f\t%7.1f\n", fahrenheit, celsius);
+		
+		printf("%10.0f\t%7.1f\n", fahrenheit, fromFahr(fahrenheit));
 	}
 }
 
