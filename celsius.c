@@ -11,11 +11,12 @@ void printFahrenheitRange(int lower, int upper, int skip)
 {
 	float fahrenheit, celsius;
 	fahrenheit = lower;
-
+	
+	printf("Fahrenheit\tCelsius\n");
 	while (fahrenheit <= upper)
 	{
 		celsius = fromFahr(fahrenheit);
-		printf("%3.0f\t%6.01f\n", fahrenheit, celsius);
+		printf("%10.0f\t%7.01f\n", fahrenheit, celsius);
 		fahrenheit += skip;
 	}
 }
