@@ -21,11 +21,11 @@ void printFahrenheitRange(int lower, int upper, int skip)
 
 void promptConvertFahr()
 {
-	int inFahr;
+	float inFahr;
         printf("What degrees Fahrenheit do you want to convert to Celsius?: ");
-        scanf("%d", &inFahr);
-        int outCelsius = fromFahr(inFahr);
-        printf("%dF in Celsius is %dC.\n", inFahr, outCelsius);
+        scanf("%f", &inFahr);
+        float outCelsius = fromFahr(inFahr);
+        printf("%6.1fF in Celsius is %6.1fC.\n", inFahr, outCelsius);
 }
 
 float fromCelsius(float celsius)
