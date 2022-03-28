@@ -17,3 +17,13 @@ void printFahrenheitRange(int lower, int upper, int skip)
 		fahrenheit += skip;
 	}
 }
+
+void promptConvertFahr()
+{
+	int inFahr;
+        printf("What degrees Fahrenheit do you want to convert to Celsius?: ");
+        scanf("%d", &inFahr);
+        int outCelsius = fromFahr(inFahr);
+        printf("%dF in Celsius is %dC.\n", inFahr, outCelsius);
+}
+
