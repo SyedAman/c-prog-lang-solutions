@@ -2,20 +2,20 @@
 
 #include "celsius.h"
 
-int fromFahr(int fahrenheit)
+float fromFahr(float fahrenheit)
 {
-	return 5 * (fahrenheit - 32) / 9;
+	return 5.0 / 9.0 * (fahrenheit - 32);
 }
 
 void printFahrenheitRange(int lower, int upper, int skip)
 {
-	int fahrenheit = lower;
-	int celsius;
+	float fahrenheit, celsius;
+	fahrenheit = lower;
 
 	while (fahrenheit <= upper)
 	{
 		celsius = fromFahr(fahrenheit);
-		printf("%3d\t%6d\n", fahrenheit, celsius);
+		printf("%3.0f\t%6.01f\n", fahrenheit, celsius);
 		fahrenheit += skip;
 	}
 }
