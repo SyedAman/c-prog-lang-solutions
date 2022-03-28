@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "celsius.h"
+#include "temperature.h"
 
 float fromFahr(float fahrenheit)
 {
