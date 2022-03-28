@@ -13,7 +13,7 @@ void printFahrenheitRange(int lower, int upper, int skip)
 	while (fahrenheit <= upper)
 	{
 		celsius = fromFahr(fahrenheit);
-		printf("%d\t%d\n", fahrenheit, celsius);
+		printf("%3d\t%6d\n", fahrenheit, celsius);
 		fahrenheit += skip;
 	}
 }
