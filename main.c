@@ -7,6 +7,8 @@ int main()
 
 	printFahrenheitRange(0, 300, 20);
 
+	printCelsiusRange(0, 300, 20);
+
 	promptConvertFahr();
 
 	return 0;
